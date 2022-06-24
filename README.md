@@ -10,8 +10,12 @@ In order to create a load balancer, we need to have EC2 instances. First, we wil
 
 Now we will click on Launch instances. The creation of an EC2 instance involves seven steps. We will see each of them one by one.
 
- 
+# Step-1: Choose AMI
+An Amazon Machine Image is a template that contains the software configuration (operating system, application server, and applications) required to launch our instance. We have different options to choose from AMI either by AWS, user community, or the AWS Marketplace; or we can select one of our own AMIs. For now, we will select Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type. Note that it's free tier eligible.
 
+![image](https://user-images.githubusercontent.com/103466963/175607722-ceafbad4-7f4e-43a2-94df-2255be44c658.png)
 
+# Step-2: Choose Instance Type
+Amazon EC2 provides us with a wide selection of instance types optimized to fit different use cases so we can choose one according to our requirements. Instances are virtual servers that can run applications and have varying combinations of CPU, memory, storage, and networking capacity. For now, we will select t2.micro that is free tier eligible.
 
-
+![image](https://user-images.githubusercontent.com/103466963/175608078-c9253b96-0147-433b-a600-1fbbc49c1534.png)
