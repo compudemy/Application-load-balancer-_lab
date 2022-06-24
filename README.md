@@ -114,5 +114,16 @@ We will again get back to the configuration of our AWS Application Load Balancer
 
 ![image](https://user-images.githubusercontent.com/103466963/175611968-bf8795d2-55f1-4296-9b1d-f7fa51aa2de0.png)
 
+# Step-5: Add Tags
+We can also add tags to our load balancer like we did while creating our EC2 instance but we will leave it for now. Tags enable us to categorize our AWS resources so we can more easily manage them.
 
+ # Step-6: Summary
+Here we can review and confirm configurations of our load balancer and then click on Create load balancer.
  
+![image](https://user-images.githubusercontent.com/103466963/175612522-a7abc548-f58b-40cf-a646-a0e14ad1a54c.png)
+
+
+
+
+
+
