@@ -46,13 +46,19 @@ Here we will review the instance launch details we configured earlier. We can al
 
 ![image](https://user-images.githubusercontent.com/103466963/175609197-7567a473-22da-4bb2-9bc8-f632ba5da7fd.png)
 
+Now we will click Launch to assign a key pair to our instance and complete the launch process. Note that we can either create a new key pair or use an existing one. Here we have used an existing key pair EC2 Tutorial.
+
+![image](https://user-images.githubusercontent.com/103466963/175609407-f3214f47-4fb9-49be-bd95-a594a90a8476.png)
+
+Now we will repeat the same steps for two more EC2 instances. After a few minutes, we can see that all our three instances are in the Running state.
+
+ ![image](https://user-images.githubusercontent.com/103466963/175609549-eebf9058-b6c3-4e90-9f31-243a4d671ca1.png)
+
+Create an AWS Application Load Balancer
+From the left pane under Load Balancing click on Load Balancers. Here we can find four types of Load Balancers that are Application Load Balancer, Network Load Balancer, Gateway Load Balancer, and Classic Load Balancer(previous generation). We will create an Application Load Balancer for our tutorial.
 
 
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/103466963/175609675-f7e8a3e4-8beb-42c4-b9de-b923b4211949.png)
 
 
 
