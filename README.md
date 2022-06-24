@@ -91,17 +91,28 @@ Here we will provide the name of our Target Group. In our case, we will keep it 
 
 ![image](https://user-images.githubusercontent.com/103466963/175611016-2a1e8a18-a102-4be1-9c4a-8567c224b0f9.png)
 
+We will keep the remaining configurations as it is. Note that here we can also set the value of Unhealthy threshold, Timeout, and Interval for health checks according to our requirements. Currently, we will keep them to default values. Now we will click on Next.
+
+![image](https://user-images.githubusercontent.com/103466963/175611359-e887201d-b7ad-472f-a945-d6968d0a2270.png)
+ 
+![image](https://user-images.githubusercontent.com/103466963/175611424-2f917315-7997-4aef-bf17-96aa9ed48a79.png)
+
+Now the next step in the creation of Target Group is to register targets. We must register our targets to ensure that our AWS Application Load Balancer routes traffic to this target group. Here we can see the instances we created initially. Now we will click on Include as pending below to register them.
+
+![image](https://user-images.githubusercontent.com/103466963/175611541-0c9ba124-55a7-4a10-9b8c-534bce666650.png)
+
+Then we will click on Create target group.
+
+![image](https://user-images.githubusercontent.com/103466963/175611595-72240163-89d0-41b0-885b-ff4fa770f2fe.png)
 
 
+Now our Target group can be viewed in the list of available Target Groups.
 
+![image](https://user-images.githubusercontent.com/103466963/175611715-67f483fa-4359-45d0-9fba-2e165c2992c9.png)
 
+We will again get back to the configuration of our AWS Application Load Balancer and select the Target Group created.
 
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/103466963/175611968-bf8795d2-55f1-4296-9b1d-f7fa51aa2de0.png)
 
 
  
