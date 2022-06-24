@@ -122,8 +122,21 @@ Here we can review and confirm configurations of our load balancer and then clic
  
 ![image](https://user-images.githubusercontent.com/103466963/175612522-a7abc548-f58b-40cf-a646-a0e14ad1a54c.png)
 
+# Testing AWS Application Load Balancer
 
+Now our AWS Application Load Balancer can be seen in the list of available load balancers. Here we can view all the details related to the load balancer like Description, Listeners, Monitoring, Integrated Services, and Tags. Note that our load balancer is currently in the Provisioning state.
 
+![image](https://user-images.githubusercontent.com/103466963/175617181-63097fd1-c2a4-44d6-9565-23bd14252d8d.png)
 
+After a while, we can see that the state has changed to Active.
 
+![image](https://user-images.githubusercontent.com/103466963/175617262-3e2e1311-7e0c-4330-8b48-b6e11cc70a4c.png)
 
+Now we will copy the DNS name of AWS Application Load Balancer from the description and enter it in the browser to see the magic happening!
+
+![image](https://user-images.githubusercontent.com/103466963/175617399-6d8f10b0-b0ba-46d0-bdc6-c7752e0b2236.png)
+
+Here we can clearly see from the hostname that the request from the Application Load Balancer is routed to all the three instances we attached to it as Targets.
+
+# Conclusion
+In this tutorial, we learned about AWS Application Load Balancer and how it works. Then we walked through the process of creation of EC2 instances as they were to be used as Target Groups for our Application Load Balancer. After that, we created our AWS Application Load Balancer in which we discussed each configuration step briefly. In the end, we witnessed the behaviour of our AWS Application Load Balancer by viewing it distributing traffic to all three instances. 
