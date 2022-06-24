@@ -60,6 +60,48 @@ From the left pane under Load Balancing click on Load Balancers. Here we can fin
 
 ![image](https://user-images.githubusercontent.com/103466963/175609675-f7e8a3e4-8beb-42c4-b9de-b923b4211949.png)
 
+![image](https://user-images.githubusercontent.com/103466963/175609760-f235a179-c2c0-4b75-b6ec-859c73fc3674.png)
+
+# Step-1: Basic Configuration
+Here we will provide the name of our Load Balancer i.e. My-Test-ALB. We will keep it to be Internet-facing as we want our load balancer to route requests from clients over the internet to target that in our case will be EC2 instances. We can select the type of IP addresses that our subnets will use, for now, we will leave it to IPV4.
+
+ ![image](https://user-images.githubusercontent.com/103466963/175610402-de1a52ee-511f-4424-98a1-9af2af22826b.png)
+
+
+# step-2: Network Mapping
+Here we will select at least two Availability Zones and one subnet per zone so that the load balancer will route traffic to targets in these Availability Zones only. We will select us-east-2a, us-east-2b, and us-east-2c and one subnet in them accordingly.
+
+![image](https://user-images.githubusercontent.com/103466963/175610564-f1571f0c-7928-4f30-bae6-8d6c75f6bdfa.png)
+
+# Step-3: Security Groups
+Here we can either create a new Security Group or choose from the existing ones. We will use the same Security Group i.e. launch-wizard-1 which we created while configuring our EC2 instance.
+
+![image](https://user-images.githubusercontent.com/103466963/175610702-8fa272a0-151f-403a-89ac-8f5c82cdde43.png)
+
+# Step-4: Listeners and Routing
+A listener is a process that checks for connection requests, using the protocol and port we configure while creating our AWS Application Load Balancer. Traffic received by the listener is then routed per our specification. Here we can either create a new Target Group or choose from the existing ones. For creating a new Target Group we will click on Create a target group. Note that here traffic on port 80 will be forwarded to the Target Group created.
+
+![image](https://user-images.githubusercontent.com/103466963/175610830-1344b45b-037e-4114-9c81-1806d4e78ad4.png)
+
+First, we will specify group details. Note that our load balancer will route requests to the targets in a target group and performs health checks on the targets as well. Targets can be of different types such as Instances, IP addresses, Lambda function, and even an AWS Application Load Balancer. We will keep our target to be Instances that we created above.
+
+![image](https://user-images.githubusercontent.com/103466963/175610937-badc9ec9-3637-47ad-8939-9fc5185b72d9.png)
+
+Here we will provide the name of our Target Group. In our case, we will keep it to My-Test-Target-Group.
+
+![image](https://user-images.githubusercontent.com/103466963/175611016-2a1e8a18-a102-4be1-9c4a-8567c224b0f9.png)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+ 
