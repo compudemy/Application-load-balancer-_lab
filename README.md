@@ -19,3 +19,19 @@ An Amazon Machine Image is a template that contains the software configuration (
 Amazon EC2 provides us with a wide selection of instance types optimized to fit different use cases so we can choose one according to our requirements. Instances are virtual servers that can run applications and have varying combinations of CPU, memory, storage, and networking capacity. For now, we will select t2.micro that is free tier eligible.
 
 ![image](https://user-images.githubusercontent.com/103466963/175608078-c9253b96-0147-433b-a600-1fbbc49c1534.png)
+
+# Step-3: Configure Instance
+Here we will configure the instance according to the requirements of the application. Through this, we can launch multiple instances from the same AMI, request Spot instances to take advantage of the lower pricing, assign an access management role to the instance, assign a VPC in which the instances will reside, and more. For now, we will keep all the configurations to default except for User Data under Advanced Details. We will set User Data to the following.
+
+![image](https://user-images.githubusercontent.com/103466963/175608555-bc405f4c-4afd-433b-b801-1857834bf62c.png)
+
+Step-4: Add Storage
+Here we will define storage device settings for our EC2 instance. We can attach additional EBS volumes that are durable, block-level storage devices that we can attach to your instances and instance store volumes that are ideal for temporary storage to our instance, or edit the settings of the root volume. For now, we will keep the configurations to default.
+
+
+
+
+
+
+
+
